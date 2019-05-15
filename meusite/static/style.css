@@ -1,25 +1,20 @@
-/* DEIXAR TORTINHO: https://codepen.io/matthewsmith_io/pen/rGJdwa
-INSPIRA��O: https://elissonkario.com.br/ */
-
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
     margin:0;
     display:grid;
     grid-template-areas: 'header header header'
-    'graduacao graduacao graduacao'
-    'habilidades habilidades habilidades'
-    'front front front'
-    'uxui uxui uxui'
-    'lab lab lab'
+    'sobre sobre sobre'
+    'temas temas temas'
+    'oficinas oficinas oficinas'
+    'equipe equipe equipe'
     'footer footer footer';
-    grid-template-rows: 85vh /*header*/
-    90vh /*graduacao*/
-    60vh /*habilidades*/
-    130vh /*front*/
-    90vh /*uxui*/
-    100vh /*lab*/
-    30vh /*footer*/;
+    grid-template-rows: 80vh /*header*/
+    60vh /*sobre*/
+    60vh /*temas*/
+    90vh /*oficinas*/
+    40vh /*equipe*/
+    15vh /*footer*/;
     font-size: 18px;
 }
 
@@ -28,17 +23,28 @@ ul{
     font-family: 'Roboto', sans-serif;
 }
 
-h2, h5{
+h2{
     color:white;
     overflow-wrap: break-word;
     font-size: 55px;
     margin: 0px;
 }
 
+h3{
+    font-size: 40px;
+}
+
 h4{
     color:purple;
     font-family: 'Roboto', sans-serif;
-    font-size:30px;
+    font-size:50px;
+}
+
+h5{
+    color:white;
+    overflow-wrap: break-word;
+    font-size: 105px;
+    margin: 0px;
 }
 
 h6{
@@ -52,6 +58,7 @@ h6{
 header {
     grid-area: header;
     background-color:black;
+    z-index: 1000;
 }
 
 header p {
@@ -61,9 +68,8 @@ header p {
 }
 
 
-.graduacao{
-    grid-area: graduacao;
-    border-top: 20px solid white;
+.sobre{
+    grid-area: sobre;
     display:flex;
     flex-direction: column;
     align-items: center; 
@@ -71,18 +77,15 @@ header p {
     background-color:black;
 }
 
-.graduacao p {
+.sobre p {
     color:white;
-    width:100%;
-    padding:0px;
-    margin:0;
-    text-align: left;
-    margin-bottom: 3px;
+    width:80%;
+    text-align: center;
 }
 
 
-.habilidades{
-    grid-area: habilidades;
+.temas{
+    grid-area: temas;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -90,34 +93,26 @@ header p {
     align-items: center;
 }
 
-.hab_titulo{
+.temas_titulo{
     justify-content: center;
     align-items: center;
 }
 
-.front{
-    grid-area: front;
+.oficinas{
+    grid-area: oficinas;
     background-color: #8A084B;
 }
 
-.uxui {
-    grid-area: uxui;
-    background-color:black;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-}
 
-.lab {
-    grid-area: lab;
-    background-color:crimson;
+.equipe {
+    grid-area: equipe;
+    background-color:black;
     z-index: 1001;
 }
 
 footer {
     grid-area: footer;
-    background-color: black;
+    background-color: white;
 }
 
 .cabecalho {
@@ -134,43 +129,43 @@ footer {
     font-size:30px;
     margin-bottom: 5px;
     text-decoration: none;
+    text-align: center;
 }
 
-.academico{
-    width:90%;
-    height: 100px;
+.bloco_sobre{
+    width:70%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: -50px;
 }
 
-.cont_acad{
+.cont_sobre{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: left;
 }
 
-.solucoes{
-    width:80%;
+.div_tema{
+    width: 90%;
+    height: 90%;
     background-color: white;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.solucoes p{
+.div_tema p{
     margin-top:-15px;
-    width:60%;
+    width:80%;
+    height:40%;
     opacity:0.6;
 }
 
 .itens{
+    height: 100px;
     display:flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -178,7 +173,7 @@ footer {
     width: 100%;
 }
 
-.portfolio{
+.portfolio_oficinas{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -188,13 +183,23 @@ footer {
     margin-top:50px;
 }
 
-.texto_portfolio{
-    width: 90%;
-    height: 20px;
+.cpu{
+    width: 150px;
+    height: 400px;
     padding:10px;
-    margin-top:-30px;
+    margin-top:90px;
     background-color: black;
     color: white;
+}
+
+.texto_portfolio{
+    color: white;
+    padding:16px;
+    text-align: center;
+}
+
+.teclado p{
+    opacity: 0.5;
 }
 
 .cont_port{
@@ -203,7 +208,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 60%;
+    width: 80%;
 }
 
 .computador{
@@ -249,44 +254,6 @@ footer {
     color: black;
 }
 
-.descri_design{
-    width:50%;
-    height:100%;
-    background-color: black;
-    z-index: 1000;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.descri_design p{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.colecao_design{
-    width:50%;
-    height:100%;
-    background-color: blue;
-}
-
-.pop_up{
-    background-color: black;
-    color: white;
-    width:300px;
-    height:50px;
-}
-
-.arte{
-    width: 90%;
-}
-
-.artes{
-    width: 500px;
-    transform: translateX(-50vw);
-    margin-top: 50px;
-}
 
 .aparecerPopUp{
     transform: translateX(5vw);
@@ -373,9 +340,30 @@ footer {
     color: black;
 }
 
-.fundo_p{
-    color: white;
-    background-color:black;
+.membros {
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.foto_membros{
+    display:flex;
+    justify-content: space-between;
+}
+
+.membro{
+    width: 90px;
+    height: 90px;
+    padding: 20px;
+}
+
+.img_on_off{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width:20%;
 }
 
 .img_hamb{
@@ -387,23 +375,24 @@ footer {
     height:50px;
 }
 
-.img_nome_titulo{   
+.simbolo_header{   
     margin-top:50px;
     padding:15px;
     margin:20;
+    width:40%;
 }
 
 .img_header{
-    height: 650px;
+    height:100%;
     background-image: url(imagens/header.png);
     background-size: cover;
 }
 
 .img_front {
-    width: 600px;
+    width: 700px;
     align-items: center;
     border: 15px solid black;
-    border-bottom: 40px solid black;
+    border-radius: 10%;
 }
 
 .campo{
@@ -414,8 +403,8 @@ footer {
 }
 
 #img_complemento {
-    width:25%;
-    margin-top:10px;
+    width:15%;
+    margin-top:40px;
 }
 
 #conteudo{
@@ -424,10 +413,6 @@ footer {
     align-items: center;
 }
 
-#entrelinhas {
-    font-size:20px;
-    opacity: 0.7;
-}
 @media(max-width:650px){
     h5{
         color:white;
