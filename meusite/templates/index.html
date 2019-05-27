@@ -5,131 +5,31 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <header>
-    <div class="img_header">
-        <div class="cabecalho">
-            <div id="conteudo">
-                <img src="{% static 'imagens/simbolo_lab.png'%}" class="simbolo_header">
-                <h5><small><small>LAB DAS</small></small>
-                    MINAS</h5>
-                </div>
-                <div class="menu_hamburguer">
-                    <span class="traco">.</span>
-                    <span class="traco">.</span>
-                    <span class="traco">.</span>
-                </div>
-                <div class="menu_X">
-                    <img src="{% static 'imagens/x.png'%}" class="X">
-                </div>
-                
-                <div class="menu_navegacao">
-                    <a href="/" class ="links">home</a>
-                    <a href="/sobre" class ="links">sobre mim</a>
-                    <a href="https://linkedin.com/in/juwitzke" class ="links">linkedin</a>
-                    <a href="/cadastro">Cadastre-se você também</a>
-                </div>
-            </div>
-            
-        </div>
-    </header>
-    
-    <section class="sobre">
-        <div class="bloco_sobre">
-            <img src="{% static 'imagens/each.png'%}" alt="" id="img_complemento">
-            <div class="cont_sobre">
-                <h6 class="subtitulo">O Grupo de Pesquisa Lab das Minas</h6></small>
-                <p>O Lab Das Minas é a extensão do L.I.R.A (Laboratórios de Inclusão em Robótica e
-                    Astronáutica) responsável por organizar um Clube de Ciências com meninas do Ensino Médio
-                    da rede pública do Estado de São Paulo. O artigo tem como objetivo descrever como as ações
-                    do projeto - particularmente a utilização de materiais de baixo custo, a adoção dos princípios
-                    do Movimento Maker e a realização intervenções relacionadas à Arduino, Impressão 3D,
-                    robótica, astronomia e astronáutica - contribuem no engajamento de meninas nas áreas das
-                    ciências exatas e tecnológicas.</p>]
-                <p>O Lab Das Minas é a extensão do L.I.R.A (Laboratórios de Inclusão em Robótica e
-                    Astronáutica) responsável por organizar um Clube de Ciências com meninas do Ensino Médio
-                    da rede pública do Estado de São Paulo. O artigo tem como objetivo descrever como as ações
-                    do projeto - particularmente a utilização de materiais de baixo custo, a adoção dos princípios
-                    do Movimento Maker e a realização intervenções relacionadas à Arduino, Impressão 3D,
-                    robótica, astronomia e astronáutica - contribuem no engajamento de meninas nas áreas das
-                    ciências exatas e tecnológicas.</br></p>
-            </div>
-            <img src="{% static 'imagens/usp.png'%}" alt="" id="img_complemento">
-        </div>
+    <div class="borda_topo">.</div>   
+    <section class="um">
+        <h1>Portal de Notícias</h1>
+        <img src="{% static 'imagens/usp_preto.jpg'%}" alt="usp" id="logo_usp">
     </section>
+    <nav>
+        <a href="#" class="links">Início</a>
+        <a href="#" class="links">Últimas Notícias</a>
+        <a href="#" class="links">Por Campus</a>
+        <a href="#" class="links">Por Tag</a>
+        <a href="#" class="links">Contato</a>
+        <input type="text" id="busca" placeholder="Pesquisar..."/>
+    </nav>
+</header>
+<section class="dois">
+    .
+</section>
+<section class="tres">
+    .
+</section>
+<aside>
+    .
+</aside>
+<footer>
+    .
+</footer>
     
-    <section class="temas">
-        <div class="temas_titulo"><h4>TEMAS DAS OFICINAS</h4></div>
-        <div class="div_tema">
-            <div class="itens">
-                <img src="{% static 'imagens/front.svg'%}" alt="" class="icon_item">
-                <h3>CIÊNCIA</h3>
-                <p>Desenvolvimento de experimentos científicos relacionados à física, matemática e biologia, buscando o entendimento do ambiente e a manipulação de seus elementos.</p>
-            </div>
-            <div class="itens">
-                <img src="{% static 'imagens/ux.svg'%}" alt="" class="icon_item">
-                <h3>ROBÓTICA</h3>
-                <p>Utilização da plataforma de prototipagem eletrônica Arduino para desenvolver projetos de robótica e automação. Desenvolvimento de circuitos elétricos e estudos sobre seu funcionamento.</p>
-            </div>
-            <div class="itens">
-                <img src="{% static 'imagens/wordp.svg'%}" alt="" class="icon_item">
-                <h3>PROGRAMAÇÃO</h3>
-                <p>Introdução a linguagens tais como C/C++ para a utilização da IDE do Arduino, linguagens de blocos (Scratch) e de lógica de programação em Java. </p>
-            </div>
-            <div class="itens">
-                <img src="{% static 'imagens/wordp.svg'%}" alt="" class="icon_item">
-                <h3>JOGOS 2D</h3>
-                <p>Criação de jogos digitais utilizando a plataforma TIC80 aprendizado da linguagem de programação Lua.</p>
-            </div>
-            <div class="itens">
-                <img src="{% static 'imagens/wordp.svg'%}" alt="" class="icon_item">
-                <h3>ASTRONOMIA</h3>
-                <p>Estudo sobre o Universo, seus astros, viagens exploratórias, relação da tecnologia com o Espaço. Desenvolvimento de maquetes, instrumentos aumatizados de exploração espacial.</p>
-            </div>
-        </div>
-    </section>
-    <section class="oficinas">
-        <div class="portfolio_oficinas">
-            <h2>OFICINAS DO CLUBE DE CIÊNCIAS E EVENTOS PARTICIPADOS</h2>
-            <div class="cont_port">
-                <div class="cpu">
-                    <img src="{% static 'imagens/on-off.png'%}" class="img_on_off">
-                    <p class="texto_portfolio">Clique no botão (>>) ao lado para visualizar as fotos das oficinas realizadas pelo grupo.</p>
-                </div>
-                        <div class="computador">
-                    <img src="{% static 'imagens/front/capa.png'%}" class="img_front">
-                    <div class="base1">.</div>
-                    <div class="base2">.</div>
-                </div>
-                <p class="proximo"> >> </p>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section class="equipe">
-        <div class="membros">
-           <h2>CONHEÇA A NOSSA EQUIPE</h2> 
-           <div class="foto_membros">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-           </div>
-           <div class="foto_membros">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-                <img src="{% static 'imagens/membros/1.jpg'%}" class="membro">
-           </div>
-        </div>     
-    </section>
-    <footer>.</footer>
-    
-    {% endblock %}
+{% endblock %}
