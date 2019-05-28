@@ -5,15 +5,17 @@ body {
     margin:0;
     display:grid;
     grid-template-areas: 
-    'header header header'
-    'dois dois aside'
-    'tres tres aside'
-    'footer footer footer';
+    'header header header header'
+    'dois dois dois dois'
+    'tres tres tres tres'
+    'aside aside quatro quatro'
+    'footer footer footer footer';
     grid-template-rows:
     220px /*header*/
-    400px /*dois*/
-    400px /*tres*/
-    300px /*footer*/;
+    300px /*dois*/
+    300px /*tres*/
+    400px /*aside quatro*/
+    100px /*footer*/;
     font-size: 18px;
 }
 
@@ -36,7 +38,6 @@ header{
     background-color:white;
     padding: 10px;
     display: flex;
-    padding-left:40px;
     justify-content: space-between;
     align-items: center;
     width:100%;
@@ -48,7 +49,7 @@ header{
 nav{
     width:100%;
     height:50px;
-    background-color: rgb(16,148,171,0.9);
+    background-color: rgb(196,0,37, 0.9);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -73,6 +74,14 @@ nav{
     align-items: center;
 }
 
+.tres{
+    grid-area: quatro;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 aside{
     grid-area: aside;
     background-color: darkgray;
@@ -83,7 +92,7 @@ aside{
 
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,14 +118,25 @@ h1{
 }
 
 /*------------------ IMAGENS ---------------------*/
+#logo_completo{
+    width:500px;
+    margin-bottom: 30px;
+}
+
 #logo_usp{
-    padding-right:80px;
-    opacity:1.0;
+    width:350px;
+    margin-bottom: 30px;
 }
 
 /*----------------- RESPONSIVIDADE -----------------*/
-@media(max-width:550px){
-    h1{
-        font-size:30px;
+@media(max-width:900px){
+    #logo_completo{
+        width:400px;
+        margin-bottom: 0px;
+    }
+    
+    #logo_usp{
+        width:300px;
+        margin-bottom: 0px;
     }
 }
