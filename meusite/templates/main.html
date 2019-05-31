@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <script defer src="{% static 'script.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -12,6 +13,39 @@
     <title>Notícias USP</title>
 </head>
 <body>
+        <header>
+                <div class="borda_topo">.</div>   
+                <section class="um">
+                    <img src="{% static 'imagens/logo_completo.png'%}" alt="usp" id="logo_completo">
+                    <img src="{% static 'imagens/each_usp_modificado.png'%}" alt="usp" id="logo_usp">
+                </section>
+                <nav>
+                    <div class="menu_hamburguer">
+                        <img src="{% static 'imagens/menu.png'%}" id ="menu_hamb">
+                    </div>  
+                    <div>
+                        <div class ="navbar">
+                            <div class="dropdown">
+                                <button class="dropbtn">Entidades</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Dasi</a>
+                                    <a href="#">Dama</a>
+                                </div>
+                            </div>
+                            <a href="#">Eventos</a>
+                            <div class="dropdown">
+                                    <button class="dropbtn">Academia</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Projetos</a>
+                                        <a href="#">Professores</a>
+                                    </div>
+                                </div>
+                            <a href="#">Incubadora</a>
+                        </div>
+                    </div>
+                    <div class="pesquisar"><input type="text" id="busca" placeholder="Pesquisar" id="busca"/></div>                 
+                </nav>
+            </header>
     <!-- bloco que receberá outros conteudos de arquivos html ja criados r-->
     {% block content %}
 
