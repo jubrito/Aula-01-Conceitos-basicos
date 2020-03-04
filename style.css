@@ -1,0 +1,39 @@
+/*classe: elementos que compartilham caracteristicas*/
+/*chamando a tag*/
+h1{
+color: black;
+font-size: 30pt;
+font-family: font-family: 'Nanum Gothic', sans-serif;
+}
+
+p {
+    font-size: 10pt;
+    padding: 10px;
+}
+
+img {
+    opacity:1.0;
+    float: left;
+    margin: 10px;
+}
+
+img:hover {
+    opacity:0.8;
+}
+
+#inputemail {
+    background-color: #000000;
+    color: #ffffff;
+    font-family:font-family: 'Nanum Gothic', sans-serif;
+}
+
+#inputsenha {
+    background-color: #000000;
+    color: #ffffff;
+    font-family:font-family: 'Nanum Gothic', sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #2bb7cc;
+    opacity: 1; /* Firefox */
+  }
