@@ -3,8 +3,9 @@
 
 ## AULA 1 - CRIANDO SITES COM HTML, CSS E JAVASCRIPT
 
-**Principais funcionalidades/conceitos aprendidos**
+**Principais funcionalidades/conceitos aprendidos:**
+
 Elementos HTML, Imagens, Botões, Inputs, Links, ID
 
-**Conceitos Complementares**
+**Conceitos Complementares:**
 Input Type, Input Name, Placeholder, Hover
